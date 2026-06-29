@@ -1,5 +1,7 @@
 # Reproducibility code for "Is the outcome of logistic regression valid on differentially private synthetic data?"
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21023052.svg)](https://doi.org/10.5281/zenodo.21023052)
+
 Authors: Hajime Ono and Nobuaki Hoshino.
 Journal of Privacy and Confidentiality (submission 1029).
 

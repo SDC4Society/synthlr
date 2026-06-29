@@ -7,6 +7,14 @@ date-released: "2026-06-29"
 license: MIT
 url: "https://github.com/SDC4Society/synthlr"
 repository-code: "https://github.com/SDC4Society/synthlr"
+doi: 10.5281/zenodo.21023052
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21023052
+    description: "Concept DOI (all versions; always resolves to the latest)"
+  - type: doi
+    value: 10.5281/zenodo.21023053
+    description: "Version DOI (v1.0.0)"
 authors:
   - given-names: Hajime
     family-names: Ono
