@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper (see preferred-citation)."
+title: "Reproducibility code for \"Is the outcome of logistic regression valid on differentially private synthetic data?\""
+type: software
+version: v1.0.0
+date-released: "2026-06-29"
+license: MIT
+url: "https://github.com/SDC4Society/synthlr"
+repository-code: "https://github.com/SDC4Society/synthlr"
+authors:
+  - given-names: Hajime
+    family-names: Ono
+    orcid: "https://orcid.org/0000-0003-3080-6358"
+    affiliation: "Kanazawa University, Kakumamachi, Kanazawa, Ishikawa 920-1192, Japan, and Research Organization of Information and Systems Joint Support-Center for Data Science Research, Data Science Building, 10-3 Midoricho, Tachikawa, Tokyo 190-0014, Japan"
+  - given-names: Nobuaki
+    family-names: Hoshino
+    affiliation: "Kanazawa University, Kakumamachi, Kanazawa, Ishikawa 920-1192, Japan, and Research Organization of Information and Systems Joint Support-Center for Data Science Research, Data Science Building, 10-3 Midoricho, Tachikawa, Tokyo 190-0014, Japan"
+keywords:
+  - differential privacy
+  - synthetic data
+  - logistic regression
+  - Dirichlet-Multinomial sampler
+  - Quasi-Multinomial sampler
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "Is the outcome of logistic regression valid on differentially private synthetic data?"
+  authors:
+    - given-names: Hajime
+      family-names: Ono
+      orcid: "https://orcid.org/0000-0003-3080-6358"
+    - given-names: Nobuaki
+      family-names: Hoshino
+  journal: "Journal of Privacy and Confidentiality"
+  year: 2026

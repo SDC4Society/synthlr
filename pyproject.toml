@@ -1,0 +1,25 @@
+[project]
+name = "synthlr"
+version = "0.0.1"
+description = "Samplers and privacy/variance functions for differentially private synthetic data (DMS and QMS), supporting the JPC logistic-regression paper"
+authors = [{ name = "Hajime ONO" }]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "pandas",
+    "ucimlrepo",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "jupyterlab",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

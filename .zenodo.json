@@ -1,0 +1,26 @@
+{
+  "title": "Reproducibility code for \"Is the outcome of logistic regression valid on differentially private synthetic data?\"",
+  "upload_type": "software",
+  "license": "MIT",
+  "version": "v1.0.0",
+  "creators": [
+    {
+      "name": "Ono, Hajime",
+      "orcid": "0000-0003-3080-6358",
+      "affiliation": "Kanazawa University, Kakumamachi, Kanazawa, Ishikawa 920-1192, Japan, and Research Organization of Information and Systems Joint Support-Center for Data Science Research, Data Science Building, 10-3 Midoricho, Tachikawa, Tokyo 190-0014, Japan"
+    },
+    {
+      "name": "Hoshino, Nobuaki",
+      "affiliation": "Kanazawa University, Kakumamachi, Kanazawa, Ishikawa 920-1192, Japan, and Research Organization of Information and Systems Joint Support-Center for Data Science Research, Data Science Building, 10-3 Midoricho, Tachikawa, Tokyo 190-0014, Japan"
+    }
+  ],
+  "description": "Code and pre-computed result arrays to reproduce all numerical figures and tables in the paper \"Is the outcome of logistic regression valid on differentially private synthetic data?\" (Journal of Privacy and Confidentiality). The experiments use synthetic data generated entirely within the code; no external or confidential data are required. Samplers: Dirichlet-Multinomial Sampler (DMS) and Quasi-Multinomial Sampler (QMS); estimators: plug-in and adjusted.",
+  "keywords": [
+    "differential privacy",
+    "synthetic data",
+    "logistic regression",
+    "Dirichlet-Multinomial sampler",
+    "Quasi-Multinomial sampler",
+    "reproducibility"
+  ]
+}
