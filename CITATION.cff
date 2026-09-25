@@ -15,7 +15,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21023053
     description: "Version DOI (v1.0.0)"
-  # TODO after the v1.1.0 GitHub release: add the new version DOI Zenodo assigns
+  - type: doi
+    value: 10.5281/zenodo.22952800
+    description: "Version DOI (v1.1.0)"
 authors:
   - given-names: Hajime
     family-names: Ono

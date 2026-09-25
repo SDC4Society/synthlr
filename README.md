@@ -114,13 +114,13 @@ Notes:
 
 ## Change log
 
-- v1.1 (2026-09): fixed the adjusted objective in `run_experiment1.py` and the
+- v1.1 (2026-09-25, DOI [10.5281/zenodo.22952800](https://doi.org/10.5281/zenodo.22952800)): fixed the adjusted objective in `run_experiment1.py` and the
   per-subtree overdispersion in `synthlr/sampler.py`; the estimators are now
   maximized over the set Beta of the paper (radius log(99)/sqrt(1+d), about
   1.45 for d = 9) instead of the ball of radius 4.6 used in v1.0; regenerated
   the Experiment-1 arrays; added `tests/test_experiment1.py`. The domain-size sweep
   (`experiment_vary_J.py`, Figure 5) was not affected and its arrays are unchanged.
-- v1.0: initial release with the first revision of the paper.
+- v1.0 (2026-06-29, DOI [10.5281/zenodo.21023053](https://doi.org/10.5281/zenodo.21023053)): initial release with the first revision of the paper.
 
 ## License
 
