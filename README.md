@@ -84,7 +84,7 @@ NumPy/BLAS stack reproduces them.
 # Experiment 1 (Table 2, Figures 2-4): epsilon in {0.5, 1.0, 1.1, 4}
 uv run python scripts/run_experiment1.py
 # or a subset, e.g.:
-uv run python scripts/run_experiment1.py 0.5 1.0
+uv run python scripts/run_experiment1.py --eps 0.5 1.0
 
 # Domain-size sweep (Figure 5). Uses n = 2e7 and is computationally heavy;
 # a workstation is recommended.
@@ -98,6 +98,29 @@ Notes:
   `gamma_min_DMS` throughout.
 - `experiment_vary_J.py` evaluates the objective in the frequency domain, so its
   cost is independent of the synthetic-data size m.
+- `run_experiment1.py` also evaluates both estimators in the frequency domain:
+  the plug-in and adjusted estimators maximize `sum_j w_j l_j(beta)` over the
+  J cells with `w = arrow_m/m` and `w = (n+gamma)/n (arrow_m/m - gamma/(n+gamma)/J)`
+  (eq. 3.2 of the paper), respectively. The QMS sampler (`_recursive_QMS`,
+  `_split_QMS`) is exercised against the exact quasi-multinomial distribution
+  in `tests/test_experiment1.py`.
+- The QMS sampler in the earlier release used the overdispersion parameter of
+  the whole table at every level of the recursive split; it now uses the
+  parameter of each subtree (`beta/(p1+p2)`), which is what the quasi-multinomial
+  distribution requires. The earlier release also computed the adjusted
+  objective incorrectly (its correction term was identically zero and n was
+  taken from the synthetic data). Both are fixed in this version and the arrays
+  in `journal/arrays/experiment1/` were regenerated; see the change log below.
+
+## Change log
+
+- v1.1 (2026-09): fixed the adjusted objective in `run_experiment1.py` and the
+  per-subtree overdispersion in `synthlr/sampler.py`; the estimators are now
+  maximized over the set Beta of the paper (radius log(99)/sqrt(1+d), about
+  1.45 for d = 9) instead of the ball of radius 4.6 used in v1.0; regenerated
+  the Experiment-1 arrays; added `tests/test_experiment1.py`. The domain-size sweep
+  (`experiment_vary_J.py`, Figure 5) was not affected and its arrays are unchanged.
+- v1.0: initial release with the first revision of the paper.
 
 ## License
 

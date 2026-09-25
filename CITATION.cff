@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite both the software and the paper (see preferred-citation)."
 title: "Reproducibility code for \"Is the outcome of logistic regression valid on differentially private synthetic data?\""
 type: software
-version: v1.0.0
-date-released: "2026-06-29"
+version: v1.1.0
+date-released: "2026-09-25"
 license: MIT
 url: "https://github.com/SDC4Society/synthlr"
 repository-code: "https://github.com/SDC4Society/synthlr"
@@ -15,6 +15,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21023053
     description: "Version DOI (v1.0.0)"
+  # TODO after the v1.1.0 GitHub release: add the new version DOI Zenodo assigns
 authors:
   - given-names: Hajime
     family-names: Ono

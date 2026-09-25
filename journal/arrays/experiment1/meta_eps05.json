@@ -1,0 +1,45 @@
+{
+  "epsilon": 0.5,
+  "d": 9,
+  "J": 1024,
+  "nums_records": [
+    1000,
+    10000,
+    100000,
+    1000000
+  ],
+  "sizes_m": [
+    102,
+    1024,
+    10240,
+    102400
+  ],
+  "num_trials": 100,
+  "seed": 1,
+  "beta_radius": 1.4531044847876884,
+  "optimizer_stats": {
+    "plugin_QMS": {
+      "n_fit": 1600,
+      "n_fail": 0,
+      "max_nit": 41
+    },
+    "plugin_DMS": {
+      "n_fit": 1600,
+      "n_fail": 0,
+      "max_nit": 41
+    },
+    "unbiased_QMS": {
+      "n_fit": 1600,
+      "n_fail": 1,
+      "max_nit": 75
+    },
+    "unbiased_DMS": {
+      "n_fit": 1600,
+      "n_fail": 3,
+      "max_nit": 69,
+      "n_infeasible": 2
+    }
+  },
+  "elapsed_sec": 1092,
+  "date": "2026-09-24"
+}

@@ -51,7 +51,10 @@ def _recursive_QMS(m, probs, beta):
     if p1 + p2 == 0:
         return [0] * len(probs)
 
-    m1 = quasi_binomial(p1/(p1+p2), m, beta)
+    # p1+p2 is the share of this subtree in the total a = n + gamma_dot,
+    # so 1/A_sub = beta/(p1+p2). Using beta itself at every depth
+    # underestimates the overdispersion of deeper splits.
+    m1 = quasi_binomial(p1/(p1+p2), m, beta/(p1+p2))
     m2 = m - m1
 
     left = _recursive_QMS(m1, probs[:mid], beta)
@@ -70,7 +73,10 @@ def _split_QMS(m, probs, beta, layer):
     if p1 + p2 == 0:
         return [0] * len(probs)
 
-    m1 = quasi_binomial(p1/(p1+p2), m, beta)
+    # p1+p2 is the share of this subtree in the total a = n + gamma_dot,
+    # so 1/A_sub = beta/(p1+p2). Using beta itself at every depth
+    # underestimates the overdispersion of deeper splits.
+    m1 = quasi_binomial(p1/(p1+p2), m, beta/(p1+p2))
     m2 = m - m1
 
     new_layer = layer - 1

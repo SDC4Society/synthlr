@@ -21,7 +21,9 @@ m_labels = ["J/10", "J", "10J", "100J"]
 panels = [("plugin", "DMS", "Plg, DMS"), ("plugin", "QMS", "Plg, QMS"),
           ("unbiased", "DMS", "Adj, DMS"), ("unbiased", "QMS", "Adj, QMS")]
 
-YLIM = (1e-3, 1e1)   # shared across ALL eps so the panels are directly comparable
+YLIM = (1e-3, 1e1)   # shared across ALL eps so the panels are directly comparable;
+                     # a fit on the boundary of Beta (radius 1.45) has error at most
+                     # (1.45 + ||beta*||)^2 < 7.5, so the top of 10 covers every case
 XLIM = (7e2, 1.4e6)  # tight around the data n=1e3..1e6 (sharex autoscale over-pads on log)
 floor = 1e-3         # lower clip so std bars stay positive on the log axis
 
